@@ -71,10 +71,14 @@ void Task1(){
     
     delay(500);
     Site(5);
-    delay(2500);
+    delay(170);
+    digitalWrite(ledPin,LOW);//关闭
+
+    delay(500);
     digitalWrite(ledPin,LOW);//关闭
     delay(500);
-    Ini();2
+    digitalWrite(ledPin,LOW);//关闭
+    Ini();
     
 }
 
@@ -129,63 +133,63 @@ void chuankou(){
         case 0x10:  while (TJC.read() >= 0);  sta=10;Task1();Serial3.write("\xff\xff\xff"); sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();
         break;   // 题目一    10 
         case 0x11: while (TJC.read() >= 0);  sta=11;  Serial3.write("\xff\xff\xff"); sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(1); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 1  黑一从 11到19
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(1);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 1  黑一从 11到19
         case 0x12: while (TJC.read() >= 0);  sta=12;  Serial3.write("\xff\xff\xff"); sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(2); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 2  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(2);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 2  
         case 0x13: while (TJC.read() >= 0);  sta=13; Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd(); 
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(3); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 3  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(3);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 3  
         case 0x14: while (TJC.read() >= 0);  sta=14;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(4); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 4  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(4);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 4  
         case 0x15: while (TJC.read() >= 0);  sta=15;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(5); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 5  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(5);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 5  
         case 0x16: while (TJC.read() >= 0);  sta=16;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(6); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 6  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(6);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 6  
         case 0x17: while (TJC.read() >= 0);  sta=17;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(7); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 7  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(7);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 7  
         case 0x18: while (TJC.read() >= 0);  sta=18;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(8); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 8  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(8);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 8  
         case 0x19: while (TJC.read() >= 0);  sta=19;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(9); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 9  
+        Chess(0,1); digitalWrite(ledPin,HIGH); delay(2500); Site(9);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑一 9  
 
         case 0x20: while (TJC.read() >= 0);  sta=20;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(1); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 1 黑二从 20 到29
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(1);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 1 黑二从 20 到29
         case 0x21: while (TJC.read() >= 0);  sta=21;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(2); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 2  
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(2);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 2  
         case 0x22: while (TJC.read() >= 0);  sta=22;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(3); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 3
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(3);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 3
         case 0x23: while (TJC.read() >= 0);  sta=23;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(4); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 4
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(4);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 4
         case 0x24: while (TJC.read() >= 0);  sta=24;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(5); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 5
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(5);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 5
         case 0x25: while (TJC.read() >= 0);  sta=25;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(6); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 6
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(6);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 6
         case 0x26: while (TJC.read() >= 0);  sta=26;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(7); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 7
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(7);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 7
         case 0x27: while (TJC.read() >= 0);  sta=27;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(8); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 8        
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(8);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 8        
         case 0x28: while (TJC.read() >= 0);  sta=28;Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(9); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 9
+        Chess(0,2); digitalWrite(ledPin,HIGH); delay(2500); Site(9);delay(500); digitalWrite(ledPin,LOW); delay(2500); break;// 黑二 9
 //从这开始写
         case 0x50:while (TJC.read() >= 0);   sta=50;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(1); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 1  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(1);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 1  
         case 0x51:while (TJC.read() >= 0);   sta=51;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(2); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 2  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(2);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 2  
         case 0x52:while (TJC.read() >= 0);   sta=52;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(3); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 3  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(3);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 3  
         case 0x53:while (TJC.read() >= 0);   sta=53;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(4); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 4  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(4);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 4  
         case 0x54:while (TJC.read() >= 0);   sta=54;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(5); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 5  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(5);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 5  
         case 0x55:while (TJC.read() >= 0);   sta=55;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(6); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 6  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(6);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 6  
         case 0x56:while (TJC.read() >= 0);   sta=56;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(7); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 7  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(7);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 7  
         case 0x57:while (TJC.read() >= 0);   sta=57;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(8); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 8  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(8);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 8  
         case 0x58:while (TJC.read() >= 0);   sta=58;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(1); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 9  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(9);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 9  
         case 0x59:while (TJC.read() >= 0);   sta=57;Serial3.write("\xff\xff\xff");  sprintf(str, "n15.val++", h);   TJC.print(str); SendEnd();  
-        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(9); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 10  
+        Chess(0,3); digitalWrite(ledPin,HIGH); delay(2500); Site(9);delay(500); digitalWrite(ledPin,LOW); delay(2500); break; // 黑一 10  
         
         case 0x60: while (TJC.read() >= 0);  sta=60; Serial3.write("\xff\xff\xff");   sprintf(str, "n15.val++", h);  TJC.print(str); SendEnd();  
         break;// 黑二 1   
